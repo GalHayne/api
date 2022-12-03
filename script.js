@@ -136,8 +136,8 @@
 //   .then((response) => response.json())
 //   .then((response) => console.log(response));
 
-//comment to user 4941
-// fetch("https://gorest.co.in/public/v2/posts/4941/comments", {
+//comment to comment 2192
+// fetch("https://gorest.co.in/public/v2/posts/2192/comments", {
 //   method: "POST",
 //   headers: {
 //     "Content-Type": "application/json",
@@ -147,17 +147,38 @@
 //   body: JSON.stringify({
 //     name: "randy orton",
 //     email: "orton@gmail.com",
-//     body: "kl;jklhjhjgfhfhg",
+//     body: "orton the viper",
 //   }),
-// });
+// })
+//   .then((response) => response.json())
+//   .then((response) => console.log(response));
 
-// delete user 4640
-// fetch("https://gorest.co.in/public/v2/users/3880", {
+// delete user
+// fetch("https://gorest.co.in/public/v2/users/3864", {
 //   method: "DELETE",
 //   headers: {
 //     "Content-Type": "application/json",
 //     Authorization:
 //       "Bearer 6391c4e40c67e624422da8cd2faebd15e26d12bae1b89619e3d1a2925d4fd20f",
 //   },
-//   body: JSON.stringify({}),
+// }).then((msg) => {
+//   console.log(msg);
 // });
+
+//update user
+// fetch("https://gorest.co.in/public/v2/users/3863", {
+//   method: "PUT",
+//   headers: {
+//     "Content-Type": "application/json",
+//     Authorization:
+//       "Bearer 6391c4e40c67e624422da8cd2faebd15e26d12bae1b89619e3d1a2925d4fd20f",
+//   },
+//   body: JSON.stringify({
+//     // name: "randy orton",
+//     // email: "orton@gmail.com",
+//     gender: "male",
+//     status: "active",
+//   }),
+// })
+//   .then((response) => response.json())
+//   .then((response) => console.log(response));
